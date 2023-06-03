@@ -1,0 +1,13 @@
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.info {
+    flex: 1;
+}
+
+.image {
+    flex: 1;
+}
