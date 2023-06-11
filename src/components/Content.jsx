@@ -6,10 +6,14 @@ export default function Content() {
     return (
         <div className='container'>
             <div className='info'>
-                1
+                <p className='text1'>The video host with the most</p>
+                <p className='text2'>See measurable result from your videos (and podcast too)
+                    with our complete hosting platform for our marketers.</p>
+                <button className='button1'>Try for free</button>
+                <button className='button2'>Explore our plan</button>
             </div>
             <div className='image'>
-                <img src={Img} width={'100%'}/>
+                <img src={Img} width={'100%'} />
             </div>
         </div>
     )

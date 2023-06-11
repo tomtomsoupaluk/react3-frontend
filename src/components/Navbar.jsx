@@ -1,7 +1,14 @@
 import React from 'react'
 import '../styles/Navbar.css'
+import { useNavigate } from 'react-router-dom'
 
 export default function Navbar() {
+    const navigation = useNavigate()
+
+    const handleLink = (path) => {
+        navigation(path)
+    }
+
     return (
         <div className='container'>
             <div className='logo'>
@@ -10,23 +17,19 @@ export default function Navbar() {
 
             <div className='menu'>
                 <div className='menuItem'>
-                    <p>Product</p>
-                    <i class='fa fa-angle-down'></i>
+                    <p onClick={()=> handleLink('/products')}>Product</p>
                 </div>
 
                 <div className='menuItem'>
-                    <p>Learning center</p>
-                    <i class='fa fa-angle-down'></i>
+                    <p onClick={()=> handleLink('/learning-center')}>Learning center</p>
                 </div>
 
                 <div className='menuItem'>
-                    <p>Original Series</p>
-                    <i class='fa fa-angle-down'></i>
+                    <p onClick={()=> handleLink('/original-series')}>Original Series</p>
                 </div>
 
                 <div className='menuItem'>
-                    <p>About</p>
-                    <i class='fa fa-angle-down'></i>
+                    <p onClick={()=> handleLink('/aboutus')}>About</p>
                 </div>
             </div>
 

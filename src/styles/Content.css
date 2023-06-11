@@ -4,8 +4,45 @@
     display: flex;
 }
 
+.button1 {
+    background-color: pink; 
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 30px 90px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.button1:hover {
+    background-color: white;
+    color: pink;
+    border: 2px solid pink;
+}
+
+.button2 {
+    background-color: white; 
+    color: pink;
+    font-size: 20px;
+    border: none;
+    padding: 30px 90px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.text1 {
+    font-size: 32px;
+}
+
+.text2 {
+    font-size: 24px;
+}
+
 .info {
     flex: 1;
+    padding-top: 10%;
 }
 
 .image {
