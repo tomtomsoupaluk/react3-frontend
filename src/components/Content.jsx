@@ -4,7 +4,7 @@ import Img from '../../public/content-img.avif'
 
 export default function Content() {
     return (
-        <div className='container'>
+        <div className='contentContainer'>
             <div className='info'>
                 <p className='text1'>The video host with the most</p>
                 <p className='text2'>See measurable result from your videos (and podcast too)

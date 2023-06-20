@@ -1,7 +1,14 @@
-.container {
+.navbarContainer {
     display: flex; 
     width: 90%; 
     margin: auto;
+}
+
+.navbarIcon {
+    flex: 1;
+    display: none; 
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .logo {
@@ -11,7 +18,7 @@
 .menu {
     display: flex; 
     flex: 1;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .menuItem {
@@ -58,4 +65,29 @@
 .getStartButtonStyle:hover {
     background-color: #ddd;
     color: black;
+}
+
+/* mobile device */
+@media screen and (max-width: 599px) {
+
+}
+
+/* ipad or macbook */
+@media screen and (max-width: 899px) {
+    .menu {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .navbarIcon {
+        display: flex;
+    }
+}
+
+/* notebook or desktop */
+@media screen and (max-width: 1200px) {
+
 }

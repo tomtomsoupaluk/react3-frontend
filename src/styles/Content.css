@@ -1,4 +1,4 @@
-.container {
+.contentContainer {
     width: 90%;
     margin: auto;
     display: flex;
@@ -47,4 +47,10 @@
 
 .image {
     flex: 1;
+}
+
+@media screen and (max-width: 899px) {
+    .contentContainer {
+        flex-direction: column;
+    }
 }
