@@ -79,6 +79,14 @@ export default function Navbar() {
                 <MenuIcon fontSize='large' />
             </div>
 
+            {/* <LoginDialog
+                open={open}
+                handleCloseDialog={handleCloseDialog}
+                handleChangeUsername={handleChangeUsername}
+                handleChangePassword={handleChangePassword}
+                handleLogin={handleLogin}
+            /> */}
+
             <LoginDialog
                 open={open}
                 handleCloseDialog={handleCloseDialog}
@@ -87,5 +95,5 @@ export default function Navbar() {
                 handleLogin={handleLogin}
             />
         </div>
-    )
+    )   
 }
