@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: gh-runner-1
 
     steps:
       - name: Checkout code
