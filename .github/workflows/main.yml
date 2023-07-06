@@ -1,21 +1,19 @@
 name: CI/CD Pipeline
-
 on:
   push:
     branches:
       - master
 
 jobs:
-  build-and-deploy:
-    runs-on: 
-      - self-hosted
-      - label-1
+  build:
+    runs-on: self-hosted
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Build and deploy
+      - name: Build and test
         run: |
-          docker-compose build
-          docker-compose up -d
+          # Add your build and test commands here
+          echo "Building and testing..."
+
