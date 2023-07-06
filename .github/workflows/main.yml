@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: gh-runner-1
+    runs-on: self-hosted
 
     steps:
       - name: Checkout code
@@ -16,4 +16,5 @@ jobs:
         run: |
           # Add your build and test commands here
           echo "Building and testing..."
+
 
