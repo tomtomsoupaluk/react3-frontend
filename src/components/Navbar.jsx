@@ -54,7 +54,7 @@ export default function Navbar() {
 
             <div className='menu'>
                 <div className='menuItem'>
-                    <p onClick={() => handleLink('/products')}>Product</p>
+                    <p onClick={() => handleLink('/products')}>Product Hello</p>
                 </div>
 
                 <div className='menuItem'>
