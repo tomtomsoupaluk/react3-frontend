@@ -10,18 +10,20 @@ export default function LoginDialog(props) {
         <DialogContent>
             <TextField
                 label='Username'
+                name='username'
                 variant='outlined'
                 fullWidth
                 margin='dense'
-                onChange={props.handleChangeUsername}
+                onChange={props.handleChange}
             />
             <TextField
                 label='Password'
+                name='password'
                 variant='outlined'
                 fullWidth
                 margin='dense'
                 type='password'
-                onChange={props.handleChangePassword}
+                onChange={props.handleChange}
             />
         </DialogContent>
         <DialogActions>

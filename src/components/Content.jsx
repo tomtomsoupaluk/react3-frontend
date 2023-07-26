@@ -1,20 +1,51 @@
 import React from 'react'
-import '../styles/Content.css'
-import Img from '../../public/content-img.avif'
+import { Box, Container, Typography, Button } from '@mui/material'
+import VideoImg from '../assets/video-icon.png'
 
 export default function Content() {
     return (
-        <div className='contentContainer'>
-            <div className='info'>
-                <p className='text1'>The video host with the most</p>
-                <p className='text2'>See measurable result from your videos (and podcast too)
-                    with our complete hosting platform for our marketers.</p>
-                <button className='button1'>Try for free</button>
-                <button className='button2'>Explore our plan</button>
-            </div>
-            <div className='image'>
-                <img src={Img} width={'100%'} />
-            </div>
-        </div>
+        <Container
+            maxWidth='xl'
+            sx={{ height: '90vh', display: 'flex', alignItems: 'center' }}
+        >
+            <Box flex={1} >
+                <Typography variant="h3" color={'white'}>The video host with the most</Typography>
+                <Typography variant="body1" color={'white'}>
+                    See measurable results from your videos as you host, manage, and share video and audio content.
+                </Typography>
+
+                <Button
+                    variant='contained'
+                    size='large'
+                    sx={{
+                        backgroundColor: 'palevioletred',
+                        color: 'white',
+                        '&:hover': {
+                            backgroundColor: 'palevioletred',
+                            color: 'white'
+                        }
+                    }}
+                >
+                    Try for free
+                </Button>
+                <Button
+                    variant='contained'
+                    size='large'
+                    sx={{
+                        backgroundColor: 'white',
+                        color: 'palevioletred',
+                        '&:hover': {
+                            backgroundColor: 'white',
+                            color: 'palevioletred'
+                        }
+                    }}
+                >
+                    Explore our plans
+                </Button>
+            </Box>
+            <Box flex={1} >
+                <img src={VideoImg} alt="video" width={'100%'} />
+            </Box>
+        </Container>
     )
 }
