@@ -41,7 +41,7 @@ export default function Navbar(props) {
 
     const handleLogin = () => {
         axios({
-            url: 'http://localhost:3000/login',
+            url: window.$api + '/login',
             method: 'POST',
             data: authData
         }).then(res => {
@@ -58,7 +58,7 @@ export default function Navbar(props) {
 
     const handleRegister = () => {
         axios({
-            url: 'http://localhost:3000/register',
+            url: window.$api + '/register',
             method: 'POST',
             data: authData
         }).then(res => {
