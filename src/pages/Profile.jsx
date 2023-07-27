@@ -17,7 +17,7 @@ export default function Profile(props) {
 
         if (token) {
             axios({
-                url: 'http://localhost:3000/user',
+                url: window.$api + '/user',
                 method: 'GET',
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -52,7 +52,7 @@ export default function Profile(props) {
     const handleSave = () => {
         const token = localStorage.getItem('token')
         axios({
-            url: 'http://localhost:3000/user',
+            url: window.$api + '/user',
             method: 'PUT',
             headers: {
                 Authorization: `Bearer ${token}`
