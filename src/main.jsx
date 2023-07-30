@@ -7,7 +7,7 @@ import './index.css'
 // window.$api = 'http://localhost:3000'
 
 // production
-window.$api = 'http://5.189.153.72:3001'
+window.$api = 'http://5.189.153.72:3003'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
