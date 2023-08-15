@@ -7,8 +7,7 @@ import './index.css'
 // window.$api = 'http://localhost:3000'
 
 // production
-// window.$api = 'https://jackapi1.wannabedevs.com'
-window.$api = 'http://5.189.153.72:3003'
+window.$api = 'https://jackapi.wannabedevs.com'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
